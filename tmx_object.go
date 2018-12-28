@@ -79,6 +79,8 @@ type Object struct {
 	GID uint32 `xml:"gid,attr"`
 	// Whether the object is shown (1) or hidden (0). Defaults to 1. (since 0.9)
 	Visible bool `xml:"visible,attr"`
+	// Template file used to apply default settings.
+	Template string `xml:"template,attr"`
 	// Custom properties
 	Properties Properties `xml:"properties>property"`
 	// Used to mark an object as an ellipse. The existing x, y, width and height attributes are used to determine the size of the ellipse.
